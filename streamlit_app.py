@@ -44,3 +44,5 @@ my_cur.execute("select * from fruityvice")
 my_data_row = my_cur.fetchone()
 streamlit.text("What fruit would you like to add:")
 streamlit.write(my_data_row)
+
+my_cur.execute("insert into fruit_load_values('from streamlit')")
